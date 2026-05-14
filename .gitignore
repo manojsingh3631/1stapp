@@ -1,0 +1,14 @@
+*.iml
+.gradle/
+.idea/
+.DS_Store
+build/
+captures/
+local.properties
+google-services.json
+*.keystore
+*.jks
+*.log
+
+# Generated files
+*/build/
