@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Compose owns the runtime theming. These XML themes only exist for the
+         window/status-bar configuration that has to be available before Compose
+         starts (i.e. the splash screen). -->
+    <style name="Theme.FinanceCalculator" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/brand_primary</item>
+        <item name="android:windowBackground">@color/surface_light</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <style name="Theme.FinanceCalculator.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/surface_light</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.FinanceCalculator</item>
+    </style>
+
+</resources>
